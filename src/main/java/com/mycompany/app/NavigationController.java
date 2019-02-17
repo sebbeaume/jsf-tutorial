@@ -45,7 +45,7 @@ public class NavigationController {
 
     private Connection getConnection() throws SQLException, ClassNotFoundException {
 
-        Class.forName("org.h2.Driver");
+        Class.forName("org.h2.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
         System.out.println("Connection completed.");
         return conn;

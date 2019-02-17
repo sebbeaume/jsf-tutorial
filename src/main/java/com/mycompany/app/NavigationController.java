@@ -37,8 +37,6 @@ public class NavigationController {
     }
 
     public void createUser() {
-        String sqlStatement = "INSERT INTO \"BANANA\" (\"USERNAME\", \"PASSWORD\") VALUES (\'" + user.getUsername() + "\', \'" + user
-                .getPassword() + "\')";
 
         executeStatement(sqlStatement);
     }
